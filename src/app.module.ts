@@ -2,8 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import dbConfig from './libs/persistence/db-config';
 import { PersistenceModule } from './libs/persistence';
-/* import { UsersModule } from '';
- */
+import { UsersModule } from './module/users/users.module';
 /* import { AtGuard } from '';
 import { APP_GUARD } from '@nestjs/core';
 import { AuthModule } from '';
@@ -18,7 +17,7 @@ import { AuthModule } from '';
     }),
     PersistenceModule,
     /* AuthModule, */
-    /* UsersModule, */
+    UsersModule,
   ],
   controllers: [],
   providers: [
